@@ -13,19 +13,3 @@ def history_event(year):
     else:
         return ["no history found"]
 
-ask_again = "y"
-while ask_again == "y": 
-    year_input = input("enter a year: ")
-    
-    if year_input:
-        year = int(year_input)
-        events = history_event(year)
-        print(f"historical events in {year}:")
-        for event in events:
-            print(f"{event}")
-    else:
-        print("invalid year")
-
-    ask_again = input("again? y/n: ")
-    if ask_again == 'n':
-        print("goodbye")
