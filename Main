@@ -14,7 +14,7 @@ def history_event(year):
         return ["no history found"]
 
 ask_again = "y"
-while ask_again != "n":
+while ask_again == "y": 
     year_input = input("enter a year: ")
     
     if year_input:
